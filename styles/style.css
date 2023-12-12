@@ -24,7 +24,7 @@
 }
 
 .to-do{
-    width:35vw;
+    width: fit-content;
     background-color: var(--white);
     margin:100px auto 20px;
     border-radius: 10px;
@@ -129,7 +129,7 @@ ul li span:hover{
 
 @media screen and (max-width:613px){
     .to-do{
-        width:80vw ;
+        width:350px ;
     }
 
    
