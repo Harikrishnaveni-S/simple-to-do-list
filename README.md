@@ -5,9 +5,7 @@ A simple To-Do List web application where users can add tasks, mark them as comp
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Usage](#usage)
 - [Screenshots](#screenshots)
-- [Installation](#installation)
   
 ## Features
 - Add tasks with a user-friendly interface.
@@ -19,17 +17,6 @@ A simple To-Do List web application where users can add tasks, mark them as comp
 - HTML
 - CSS (with custom styles and gradients)
 - JavaScript
-
-## Usage
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/simple-to-do-list.git
-    cd simple-to-do-list
-    ```
-
-2. Open `index.html` in your web browser.
-
-3. Start adding, completing, and removing tasks.
 
 ## Screenshots
 ![image](https://github.com/Harikrishnaveni-S/simple-to-do-list/assets/91268775/fa04f736-e926-48e3-9ec9-1837d0413fc2)
