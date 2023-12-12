@@ -123,10 +123,24 @@ ul li span:hover{
     border-radius: 30px;
 }
 
+
 @media screen and (max-width:613px){
     .to-do{
-        width:350px ;
+        width:80vw ;
+    }
+
+    input{
+        font-size: 12px;
+        padding-left: 10px;
     }
    
 } 
+
+
+
+
+
+
+
+
 
