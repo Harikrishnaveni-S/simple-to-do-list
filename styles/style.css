@@ -1,0 +1,132 @@
+:root{
+    --bgGradient: linear-gradient(to right top, #b460d5, #a449d5,#712472);
+    --taskGradient : linear-gradient(to left bottom, #ef4040, #ef5432, #fc7733, #fe8f30, #ffa732);
+    --white:rgb(247, 242, 242);
+    --violet:#81359f;
+    --grey:rgba(158, 152, 152, 0.2);
+    --red:rgb(239, 17, 17);
+    --green:green;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.todo-container{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bgGradient);
+    padding: 10px;
+    background-size: 80% 90%;
+}
+
+.to-do{
+    width:35vw;
+    background-color: var(--white);
+    margin:100px auto 20px;
+    border-radius: 10px;
+    padding: 30px 30px 70px;
+}
+
+.to-do h2{
+    color: var(--violet);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.taskRow{
+    display: flex;
+    align-items: center;
+    background-color:var(--grey);
+    border-radius: 40px;
+    margin-bottom: 25px; 
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 10px;
+    margin: 6px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px;
+    background: var(--taskGradient);
+    background-size: 50% 50%;
+    color: var(--white);
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100px;
+    font-weight: bold;
+}
+
+.listedTask{
+    list-style:none;
+    font-size: 17px;
+    padding: 13px 40px 12px 45px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content:start;
+}
+
+ul li::before{
+    content: '\f111';
+    font: var(--fa-font-regular);
+    position: absolute;
+    font-size: 18px;
+    top:15px;
+    left:10px;
+    display: flex;
+    align-items: center;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    content: '\f058';
+    font: var(--fa-font-regular);
+    color: var(--green);
+    font-size: 18px;
+}
+
+ul li span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px; 
+    color: var(--red);
+}
+
+ul li span:hover{
+    background-color: var(--grey);
+    border-radius: 30px;
+}
+
+@media screen and (max-width:613px){
+    .to-do{
+        width:350px ;
+    }
+   
+} 
+
