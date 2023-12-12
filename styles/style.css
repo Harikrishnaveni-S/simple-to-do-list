@@ -45,10 +45,11 @@
     background-color:var(--grey);
     border-radius: 40px;
     margin-bottom: 25px; 
+    position: relative;
 }
 
 input{
-    flex: 1;
+    flex:1;
     border: none;
     outline: none;
     background: transparent;
@@ -67,8 +68,10 @@ button{
     border-radius: 50px;
     font-size: 18px;
     cursor: pointer;
-    width: 100px;
     font-weight: bold;
+    position: absolute;
+    right:0px;
+    width:fit-content;
 }
 
 .listedTask{
@@ -129,10 +132,6 @@ ul li span:hover{
         width:80vw ;
     }
 
-    input{
-        font-size: 12px;
-        padding-left: 10px;
-    }
    
 } 
 
