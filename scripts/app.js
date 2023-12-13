@@ -29,6 +29,7 @@ addTaskButton.addEventListener('click', addTask);
 function handleTaskClick(event) {
     if (event.target.tagName === "LI") {
         event.target.classList.toggle("checked");
+        saveLocalData()
     }
 
     if (event.target.tagName === 'SPAN') {
