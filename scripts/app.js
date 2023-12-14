@@ -14,10 +14,12 @@ function addTask() {
         task.classList.add('listedTask');
         taskList.appendChild(task);
         task.innerHTML = taskValue;
+        task.setAttribute("data-clickable-testid",taskValue)
 
         let closeIcon = document.createElement('span');
         closeIcon.innerHTML = '&#10006';
         closeIcon.classList.add('close')
+        closeIcon.setAttribute("data-clickable-testid","delete "+taskValue)
         task.appendChild(closeIcon);
         taskInput.value = ''
         saveLocalData()

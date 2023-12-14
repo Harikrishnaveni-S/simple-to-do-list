@@ -10,15 +10,15 @@
 </head>
 
 <body>
-    <div class="todo-container">
-        <div class="to-do">
-            <h2 id="page-title">&#128203 To-Do-List</h2>
-            <div class="taskRow">
-                <input type="text" name="taskInput" id="taskInput" placeholder="Enter your task...">
-                <button id="addTask">Add</i></button>
+    <div class="todo-container" data-mainContainer-testid="todo-container">
+        <div class="to-do" data-container-testid="to-do">
+            <h2 id="page-title" data-text-testid="title">&#128203 To-Do-List</h2>
+            <div class="taskRow" data-row-testid="taskRow">
+                <input type="text" name="taskInput" id="taskInput" data-input-testid="taskInput" placeholder="Enter your task...">
+                <button id="addTask" data-clickable-testid="addTask">Add</i></button>
             </div>
-            <div class="task-list-container">
-                <ul class="task-list"></ul>
+            <div class="task-list-container" data-container-testid="task-list-container">
+                <ul class="task-list" data-list-testid="task-list"></ul>
             </div>
         </div>
     </div>
